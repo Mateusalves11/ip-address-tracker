@@ -9,6 +9,14 @@ export const CardSetItemBase = styled.div`
     max-width: 260px;
     padding-right: 60px;
     border-right: 1px solid rgb(220, 220, 220);
+
+    @media screen and (max-width: 768px){
+        padding-right: 0px;
+        border-right: none;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(220, 220, 220);
+    }
 `
 
 export const Title = styled(Text)`

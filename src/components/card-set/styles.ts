@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const CardSetBase = styled.div`
     background-color: ${({theme}) => theme.colors.white};
-    min-height: 130px;
     border-radius: 10px;
     padding: 28px;
     min-height: 150px;
@@ -16,5 +15,11 @@ export const CardSetBase = styled.div`
         &:last-child{
             border: none;
         }
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
     }
 `

@@ -1,3 +1,4 @@
+import { Text } from "@global-components/text";
 import styled from "styled-components";
 
 export const MainBase = styled.div`
@@ -9,6 +10,15 @@ export const MainBase = styled.div`
     max-height: 300px;
     @media screen and (max-width: 768px){
         background-image: url('/assets/images/pattern-bg-mobile.png');
+        max-height: 440px;
+    }
+`
+
+export const Title = styled(Text)`
+    font-size: 40px;
+    font-weight: 500;
+    @media screen and (max-width: 768px){
+        font-size: 30px;
     }
 `
 

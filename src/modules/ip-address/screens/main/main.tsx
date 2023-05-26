@@ -1,6 +1,6 @@
 import { CardSet, CardSetItem } from "@global-components/index";
 import { Text } from "@global-components/text";
-import { Container, MainBase } from "./style";
+import { Container, MainBase, Title } from "./style";
 import { Input } from "@global-components/input";
 import { useEffect, useState } from "react";
 import { loadAddressByIp, loadGeoCodeByCountry } from "services/ip-address";
@@ -50,7 +50,7 @@ export default function IpAddress() {
         <>
             <MainBase>
                 <Container>
-                    <Text fontSize={40} fontWeight={'500'} color={'white'}>IP Address Tracker</Text>
+                    <Title color={'white'}>IP Address Tracker</Title>
                     <Input style={{ width: '30vw', minWidth: 300 }} onClickButton={() => {
                         getAddressByIp(input)
                     }} value={input} onChange={(e) => { setInput(e.target.value) }} placeholder="Search for any IP address or domain" />
