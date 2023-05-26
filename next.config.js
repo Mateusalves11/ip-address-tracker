@@ -1,6 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-}
-
-module.exports = nextConfig
+  transpilePackages: [],
+  compiler: {
+    styledComponents: true,
+  },
+  distDir: "build",
+  images: {
+    unoptimized: true,
+  },
+  trailingSlash: true,
+};

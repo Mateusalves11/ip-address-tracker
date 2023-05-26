@@ -14,7 +14,7 @@
 
 # production
 /build
-
+/outdir
 # misc
 .DS_Store
 *.pem

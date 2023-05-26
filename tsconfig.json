@@ -1,5 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@global-components/*": ["./components/*"],
+      "@global-modules/*": ["./modules/*"],
+      "@pages/*": ["./pages/*"],
+      "@global-styles/*": ["./styles/*"],
+      "@global-fonts/*": ["./fonts/*"],
+      "@global-configs/*": ["./configs/*"],
+      "@global-libs/*": ["./libs/*"],
+      "@global-entities/*": ["./entities/*"],
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
